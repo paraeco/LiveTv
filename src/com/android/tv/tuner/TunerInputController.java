@@ -53,6 +53,9 @@ public class TunerInputController extends BroadcastReceiver {
     private static final String TAG = "TunerInputController";
 
     private static final TunerDevice[] TUNER_DEVICES = {
+        new TunerDevice(0x0bda, 0x2838),  // RTL2838 DVB-T (RTL2832U)
+        new TunerDevice(0x048d, 0x9135),  // Zolid Mini DVB-T Stick
+        new TunerDevice(0x07ca, 0x850a),  // AverTV Volar Black HD (A850)
         new TunerDevice(0x2040, 0xb123),  // WinTV-HVR-955Q
         new TunerDevice(0x07ca, 0x0837)   // AverTV Volar Hybrid Q
     };
