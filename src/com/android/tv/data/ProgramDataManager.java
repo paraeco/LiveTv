@@ -68,7 +68,7 @@ public class ProgramDataManager implements MemoryManageable {
     @VisibleForTesting
     static final long PROGRAM_GUIDE_SNAP_TIME_MS = TimeUnit.MINUTES.toMillis(30);
     @VisibleForTesting
-    static final long PROGRAM_GUIDE_MAX_TIME_RANGE = TimeUnit.DAYS.toMillis(2);
+    static final long PROGRAM_GUIDE_MAX_TIME_RANGE = TimeUnit.DAYS.toMillis(7);
 
     // TODO: Use TvContract constants, once they become public.
     private static final String PARAM_START_TIME = "start_time";
