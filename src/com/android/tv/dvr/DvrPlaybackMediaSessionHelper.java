@@ -238,7 +238,7 @@ public class DvrPlaybackMediaSessionHelper {
             @Override
             protected Void doInBackground(Void... arg0) {
                 MediaMetadata.Builder builder = new MediaMetadata.Builder();
-                builder.putLong(MediaMetadata.METADATA_KEY_MEDIA_ID, programId)
+                builder.putString(MediaMetadata.METADATA_KEY_MEDIA_ID, String.valueOf(programId))
                         .putString(MediaMetadata.METADATA_KEY_TITLE, title)
                         .putLong(MediaMetadata.METADATA_KEY_DURATION, duration);
                 if (subtitle != null) {

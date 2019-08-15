@@ -158,10 +158,10 @@ public class DvrPlaybackControlHelper extends PlaybackControlGlue {
     /**
      * Returns the ID of the media under playback.
      */
-    public long getMediaId() {
+    public String getMediaId() {
         MediaMetadata mediaMetadata = mMediaController.getMetadata();
-        return mediaMetadata == null ? UNKNOWN_MEDIA_ID
-                : mediaMetadata.getLong(MediaMetadata.METADATA_KEY_MEDIA_ID);
+        return mediaMetadata == null ? null
+                : mediaMetadata.getString(MediaMetadata.METADATA_KEY_MEDIA_ID);
     }
 
     @Override
